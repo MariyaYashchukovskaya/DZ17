@@ -13,8 +13,6 @@ import './scss/app.scss'
 //  // тут должно вывести value инпута
 //  /* Добавьте в последнюю строчку метод call() так, чтобы на экран вывелось value инпута, лежащего в переменной elem. */
 
-
-
 //  /* 2. Пусть дан следующий код: */
 
 //  const elem2 = document.querySelector('#elem2');
@@ -27,8 +25,6 @@ import './scss/app.scss'
 //  // тут должно вывести 'добрый день, Иванов Иван'
 //  /* Добавьте в последнюю строчку метод call() так, чтобы на экран вывелось 'добрый день, Иванов Иван'. Слово 'добрый день' должно взяться из value инпута, а 'Иванов' и 'Иван' должны быть параметрами функциями. */
 
-
-
 // //  /* 3. Переделайте решение предыдущей задачи так, чтобы место метода call() был метод apply(). */
 
 // const elem2 = document.querySelector('#elem2');
@@ -39,14 +35,12 @@ import './scss/app.scss'
 
 // func2.apply(elem2, ['Иванов', 'Иван']);
 
-
-
 /* 4. Пусть дан следующий код: */
 
-const elem1 = document.querySelector('#elem1');
+const elem1 = document.querySelector('#elem1')
 
-function func3(surname, name) {
-  alert(this.value + ', ' + surname + ' ' + name);
+function func3 (surname, name) {
+  alert(this.value + ', ' + surname + ' ' + name)
 }
 
 // Тут напишите конструкцию с bind()
